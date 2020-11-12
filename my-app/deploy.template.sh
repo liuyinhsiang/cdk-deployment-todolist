@@ -1,0 +1,1 @@
+rm -rf build && react-scripts build && aws s3 sync ./build s3://'YOUR_DOMAIN_NAME'
