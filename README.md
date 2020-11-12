@@ -23,8 +23,42 @@ The chosen app is a simple to-do list app (task management), building with React
 ## Requirement
 - You will need an AWS account to create this infrastructure.
 - A registered domain name.
-- AWS CLI version 2 and Terraform cli installed.
+- AWS CLI version 2 and Terraform CLI installed.
+  
 ## Installation
+Installation divided into two parts:
+
+### My App
+To run this project, install my-app locally using yarn:
+
+```sh
+$ cd ../my-app
+$ yarn install
+```
+
+To be able to deploy my-app, you will need to modify the `deploy.sh` file. In order to make this file can run, do:
+```sh
+$ chmod +x deploy.sh
+```
+
+### Infrastructure
+You need to modify `terraform.tfvars` file, type in the required variables.
+
+After that, in project root directory, run:
+```sh
+$ cd terraform
+$ terraform init
+$ terraform plan # -> Run this to preview result
+$ terraform apply
+```
+
+When Terraform is busy interacting with AWS, you will need to log into AWS console, go to route53, get the name servers from the newly created hosted zone then update Name Servers configuration from your domain name provider.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
 
 
  
