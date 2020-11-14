@@ -20,7 +20,7 @@ The requirements of this challenge is listed below:
 The chosen app is a simple to-do list app (task management), building with React, React Context API.
 
 ![alt text](./assets/task-app-demo.png)
-## Requirement
+## Requirements
 - You will need an AWS account to create this infrastructure.
 - A registered domain name.
 - AWS CLI version 2 and Terraform CLI installed.
